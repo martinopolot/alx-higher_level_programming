@@ -4,10 +4,11 @@
 #include <stdlib.h>
 /**
  * struct listint_s - function for the singly linked list
- * @n: int value given
+ * @n: integer 
  * @next: pointer to the following node
  *
- * Description: SLL structure node
+ * Description:signly linked list node structure
+ * for project
  */
 typedef struct listint_s
 {
@@ -21,4 +22,4 @@ void free_listint(listint_t *head);
 
 int is_palindrome(listint_t **head);
 
-#endif
+#endif /* LISTS_H */

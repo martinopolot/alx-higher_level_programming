@@ -29,3 +29,18 @@ A documentation is not a simple word, it’s a real sentence explaining what’s
 # More Info
 Documentation is now mandatory! Each module, class, and method must contain docstring as comments.
 https://alx-intranet.hbtn.io/rltoken/dOO785g5EQYkRU2E1wri0g
+
+# Questions
+write an empty class Square that defines a square
+
+write a class Square that defines a square by: (based on 0-square.py)
+
+write a class Square that defines a square by: (based on 1-square.py)
+
+write a class Square that defines a square by: (based on 2-square.py)
+
+write a class Square that defines a square by: (based on 3-square.py)
+
+write a class Square that defines a square by: (based on 4-square.py)
+
+write a class Square that defines a square by: (based on 5-square.py)

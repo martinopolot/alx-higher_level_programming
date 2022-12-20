@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+# 1-square.py
+# martin Opolot - @github - martinopolot
+""" Define a class with Private instance attribute: size."""
+
+
 class Square:
     """square"""
     def __init__(self, size):

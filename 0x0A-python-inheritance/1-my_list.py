@@ -1,28 +1,16 @@
 #!/usr/bin/python3
 """
-Thi module 1-my_list
-This module contains one class and one public instance method
-Access test for this class in /tests subfolder - to run:
-`python 3 -m doctest ./tests/1-my_list.txt`
+===========================
+Module with class MyList
+===========================
 """
 
 
 class MyList(list):
-    """
-    inherits from `list`
-    Public instance method:
-    `def print_sorted(self):`
-    Args:
-    list
-    Returns:
-    prints to stdout list sorted by ascending order
-    """
+    """Class with method print_sorted"""
+    pass
 
     def print_sorted(self):
-        """
-        prints the list, but sorted (ascending sort)
-        """
-        sorted_list = MyList()
-        for item in self:
-            sorted_list.append(item)
-        print(sorted(sorted_list))
+        """Methot that sorted a list"""
+
+        print(sorted(list(self)))

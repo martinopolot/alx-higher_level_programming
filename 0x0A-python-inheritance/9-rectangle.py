@@ -1,28 +1,50 @@
 #!/usr/bin/python3
+"""
+This is module 9-rectangle
+This module contains:
+-one class
+-two functions
+"""
+
+
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
-"""
-===================================
-module with class BaseGeometry
-===================================
-"""
 
 
 class Rectangle(BaseGeometry):
-    """Rectangle class that inherits from BaseGeometry"""
+    """
+    inherits class from BaseGeometry (7-base_geometry)
+    Instantiation with width and height:
+    def __init__(self, width, height):
+    width and height must be private. No getter or setter
+    width and height must be positive integers, validated by integer_validator
+    Args:
+    width
+    height
+    Returns:
+    area of shape
+    """
 
     def __init__(self, width, height):
-        """Method for initialized the attrubutes"""
-        self.integer_validator("width", width)
+        """
+        private instantiation
+        """
         self.__width = width
-        self.integer_validator("height", height)
         self.__height = height
+        BaseGeometry.integer_validator(self, "width", self.__width)
+        BaseGeometry.integer_validator(self, "height", self.__height)
 
     def area(self):
-        """Method to redefine a area method in the parent class"""
-
-        return self.__width * self.__height
+        """
+        returns the area
+        """
+        return (self.__width * self.__height)
 
     def __str__(self):
-        """__str__ method for return the next string"""
-
-        return "[Rectangle] {}/{}".format(self.__width, self.__height)
+        """
+        instance method for string - print class name with
+        following rectangle description: [Rectangle] <width>/<height>
+        """
+        return ("[{:s}] {:d}/{:d}".
+                format(self.__class__.__name__,
+                       self.__width,
+                       self.__height))
